@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+}
+
+.header {
+    background: #1f2937;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    margin-top: 1em;
+}
+
+ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+    background-image: linear-gradient(45deg, #3882f6, #3882f6);
+    width: 68px;
+    text-align: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-size: 100% 3px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #e5e7eb;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.logo {
+    width: 50%;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 62px;
+    gap: 12px;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.apple-logo {
+    width: 24px;
+}
+
+.hero {
+    padding-left: 3em;
+    padding-right: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: calc(100vh - 6vh);
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    width: 50%;
+    margin-left: 22px;
+}
+
+.text span {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: medium;
+}
+
+.text cool {
+    font-weight: bolder;
+    position: relative;
+    color: #1f2937;
+    font-size: 60px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.671);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.text cool:hover::before {
+    width: 100%;
+    animation: none;
+}
+
+.text cool::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #00ade1;
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right:6px solid #00ade1;
+    -webkit-text-stroke: 1px #00ade1;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-right:5px solid #00ace100;
+    }
+    50% {
+        border-right:5px solid #00ade1;
+    }
+}
+
+.text p {
+    font-size: 18px;
+    color: #e5e7eb;
+    line-height: 1.7em;
+}
+
+.text .header-sign-up {
+    background-color: #3882f6;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 11px;
+    width: 8vw;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    margin-top: 9px;
+}
+
+.text .header-sign-up:hover {
+    background-color: #06c;
+    cursor: pointer;
+}
+
+.info {
+    min-height: 100vh;
+}
+
+div.heading {
+    font-size: 36px;
+    font-weight: normal;
+    color: #1f2937;
+    text-align: center;
+    margin-top: 12px;
+}
+
+div.heading span {
+    font-size: 46px;
+    font-weight: bold;
+    color: #454545;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: calc(100vh - 55px);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgbox img {
+    box-shadow: 19px 13px 29px #cdcdcd;
+}
+
+.imgbox .name {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.card3 .imgbox .name span {
+    font-size: 18px;
+    position: relative;
+    top: -8px;
+    margin-left: 2px;
+    border: 2px solid black;
+    border-radius: 16%;
+}
+
+.card .imgbox .description {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.card .other-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .other-info .price {
+    font-size: 15px;
+    margin-top: 64px;
+    color: black;
+}
+
+.card .other-info .buy-now-btn {
+    margin-top: 16px;
+    background-color: #3882f6;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: #e5e7eb;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card .other-info .buy-now-btn:hover {
+    background-color: #0c4db5;
+}
+
+.card .other-info a {
+    color: #06c;
+    margin-top: 11px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card .other-info a:hover {
+    color: rgb(3, 118, 233);
+    font-weight: bold;
+}
+
+.card .other-info a ion-icon {
+    margin-top: 3px;
+}
+
+.end-page {
+    min-height: 100vh;
+}
+
+.quote-box {
+    height: 40vh;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box span {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: light;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.quote-box span .person {
+    font-size: 29px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+}
+
+.quote-box span .person b {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    right: 0;
+}
+
+.membership-box {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.membership {
+    width: 80%;
+    background: #3882f6;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.membership-box .membership .heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    left: 10%;
+}
+
+.membership-box .membership span {
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    position: relative;
+    left: 10%;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.membership-box .membership button {
+    align-self: flex-end;
+    position: absolute;
+    cursor: pointer;
+    right: 25%;
+    font-size: 24px;
+    color: #fff;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 7px;
+    padding: 12px;
+}
+
+.footer {
+    height: calc(100vh - 80vh);
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer span {
+    font-size: 27px;
+    font-family: 'Dancing Script', cursive;
+    color: #ff627d;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 27px;
+    border-radius: 6px;
+    padding: 6px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    background: #00ade1;
+    color: white;
+}
