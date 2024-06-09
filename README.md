@@ -10,7 +10,7 @@ This repository contains a clone of the Apple landing page created in 2022 using
 
 ## Live Demo
 
-Check out the deployed version of the Apple Landing Page Clone [https://durubhuru14.github.io/Apple-landing-page-clone/](#).
+Check out the deployed version of the Apple Landing Page Clone [here](https://durubhuru14.github.io/Apple-landing-page-clone/).
 
 ## Installation
 
