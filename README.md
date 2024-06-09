@@ -19,3 +19,7 @@ To view or modify the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/apple-landing-page-clone.git
+2. Navigate to directory:
+   ```bash
+   cd apple-landing-page-clone
+3. Open **index.html** in your web browser.
