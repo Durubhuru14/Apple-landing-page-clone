@@ -4,7 +4,6 @@ This repository contains a clone of the Apple landing page created in 2022 using
 
 ## Features
 
-- **Responsive Layout**: Adapts seamlessly to different screen sizes.
 - **Minimalist Design**: Emulates the iconic Apple aesthetic.
 - **Pure HTML and CSS**: Built without JavaScript or external frameworks.
 
